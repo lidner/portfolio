@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="author" content="portfolio" />
+    <title>lidner's portfolio</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Bootstrap CDNs -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <!-- google fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Mono:100,100i,300,300i,400,400i,500,500i,700,700i"
+      rel="stylesheet"
+    />
+
+    <!-- terminal effect -->
+    <script src="t.min.js"></script>
+
+    <!-- for on scroll animations -->
+    <link rel="stylesheet" href="animate.css" />
+    <script src="wow.min.js"></script>
+  </head>
+  <body>
+      <div class="wrapper">
+          <!-- NavBar Start -->
+      <nav>
+        <span id="brand">
+          <a href="index.html">lidner</a>
+        </span>
+
+        <ul id="menu">
+          <li>
+            <a href="index.html">home<span>.</span></a>
+          </li>
+          <li>
+            <a href="work.html">work<span>.</span></a>
+          </li>
+          <li>
+            <a href="about.html">about<span>.</span></a>
+          </li>
+          <li>
+            <a href="contact.html">contact<span>.</span></a>
+          </li>
+        </ul>
+
+        <div id="toggle">
+          <div class="span">menu</div>
+        </div>
+      </nav>
+
+      <div id="resize">
+        <div class="close-btn">close</div>
+
+        <ul id="menu">
+          <li>
+            <a href="index.html">home<span>.</span></a>
+          </li>
+          <li>
+            <a href="work.html">work<span>.</span></a>
+          </li>
+          <li>
+            <a href="about.html">about<span>.</span></a>
+          </li>
+          <li>
+            <a href="contact.html">contact<span>.</span></a>
+          </li>
+        </ul>
+      </div>
+      <!-- NavBar End -->
+
+      <!-- Image Section -->
+      <div class="container">
+          <div class="row">
+              <div class="col-lg-12 about image wow fadeInUp" data-wow-delay="0.7s"></div>
+          </div>
+      </div>
+      <!-- Image Section End -->
+
+      <!-- Section Info -->
+      <div class="container">
+          <div class="hero-content">
+              <br><br>
+
+              <div class="row">
+                  <div class="col-lg-12">
+                      <h3 class="wow fadeInUp" data-wow-delay="1s">about me.</h3>
+                      <br>
+                      <p class="wow fadeInUp">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error sit, ducimus vitae iure, non possimus et totam expedita enim minus tempora porro? Animi fugit perspiciatis nam blanditiis provident eum nostrum!</p>
+
+                      <p class="wow fadeInUp" data-wow-delay="0.5s">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet dicta delectus recusandae placeat! Maiores ad officia ex consequuntur nam, laboriosam fuga enim iusto earum molestias deleniti dicta ullam illum iure.</p>
+
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!-- Section Info END -->
+
+      <div class="whitespace"></div>
+
+
+      <!-- Footer Section Start -->
+      <div class="footer">
+            <div class="container">
+              <br /><br />
+    
+              <div class="collab">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <p class="wow fadeInDown">
+                      Got something interesting? Contact me
+                    </p>
+                  </div>
+                </div>
+              </div>
+    
+              <br />
+    
+              <div class="hr">
+                <div class="row"></div>
+              </div>
+    
+              <br /><br />
+    
+              <div class="info">
+                <div class="row">
+                  <div class="col-lg-4" id="personal">
+                    <p class="wow fadeInUp">contact with me</p>
+                    <h4 class="wow fadeInUp" data-wow-delay="0.5s">
+                      lidner.ls@gmail.com
+                    </h4>
+                  </div>
+    
+                  <div class="col-lg-4" id="media">
+                    <p class="wow fadeInUp">follow me</p>
+                    <ul>
+                      <li id="fb" class="wow fadeInUp" data-wow-delay="0.4s">
+                        fb.
+                      </li>
+                      <li id="ig" class="wow fadeInUp" data-wow-delay="0.6s">
+                        ig.
+                      </li>
+                      <li id="tg" class="wow fadeInUp" data-wow-delay="0.8s">
+                        tg.
+                      </li>
+                    </ul>
+    
+                    <br /><br />
+                  </div>
+    
+                  <div class="col-lg-4" id="address">
+                    <p class="wow fadeInUp">Astana Hub</p>
+                    <h4 class="wow fadeInUp" data-wow-delay="0.5s">
+                      Mangilik El Avenue C4.6
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Footer Section End -->
+      </div>
+  </body>
+
+  <footer>
+
+  </footer>
+  <!-- greensock cdn -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script type="text/javascript">
+    // navigation
+    $("#toggle").click(function() {
+        $(this).toggleClass("on");
+        $("#resize").toggleClass("active");
+      });
+
+      $("#resize ul li a").click(function() {
+        $(this).toggleClass("on");
+        $("#resize").toggleClass("active");
+      });
+
+      $(".close-btn").click(function() {
+        $(this).toggleClass("on");
+        $("#resize").toggleClass("active");
+      });
+      // navigation end
+      //   nav animation
+      TweenMax.from("#brand", 1, {
+        delay: 0.4,
+        y: 10,
+        opacity: 0,
+        ease: Expo.easeInOut
+      });
+
+      TweenMax.staggerFrom(
+        "#menu li a",
+        1,
+        {
+          delay: 0.4,
+          opacity: 0,
+          ease: Expo.easeInOut
+        },
+        0.1
+      );
+
+      //   nav animation end
+      new WOW().init();
+  </script>
