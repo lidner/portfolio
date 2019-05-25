@@ -21,6 +21,9 @@
       rel="stylesheet"
     />
 
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+
     <!-- terminal effect -->
     <script src="t.min.js"></script>
 
@@ -83,16 +86,18 @@
         </div>
       </div>
 
-      <div class="scroll-down"></div>
+      <div>
+        <a href="#my-projects" class="scroll-down"></a>
+      </div>
       <!-- First Section End -->
 
       <!-- Projects Section Start -->
       <div class="container-fluid">
         <br /><br /><br />
+        <div id="my-projects"></div>
+        <h2>My projects</h2>
 
-        <h6>Selected projects</h6>
-
-        <div class="vertical"></div>
+        <!-- <div class="vertical"></div> -->
         <br />
         <div class="whitespace"></div>
         <div class="whitespace"></div>
@@ -211,10 +216,12 @@
       <br /><br /><br /><br />
     </div>
     <!-- greensock cdn -->
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
     <script type="text/javascript">
+    
       // navigation
       $("#toggle").click(function() {
         $(this).toggleClass("on");
@@ -252,6 +259,16 @@
       );
 
       //   nav animation end
+
+        // // scroll down
+        // $(".scroll-down").click(function() {
+        //   $('html, body').animate({
+        //         scrollTop: $("#firstProject").offset().top-700
+        //     }, 2000);
+        //   // console.log("scroll");
+        // });
+      
+
 
       new WOW().init();
     </script>

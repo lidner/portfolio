@@ -286,7 +286,11 @@ nav #menu li a:hover {
 
 /* Projects */
 
-h6 {
+#my-projects {
+  height: 200px;
+}
+
+h2 {
   text-align: center;
 }
 
